@@ -1,0 +1,288 @@
+    %-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Devon Barclay} % Your Name
+\newcommand{\course}{Computing and Informatics} % Your Program
+\newcommand{\phone}{267-664-8487} % Your Phone Number
+\newcommand{\emaila}{Devon.Barclay23@gmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ \phone}\\
+  {she/her} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {\footnotesize \faLinkedin}\ {\href{http://linkedin.com/in/devon-barclay-a2b8a518b/}{LinkedIn Profile}}& \href{http://github.com/devon-23}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\  
+\end{tabularx}
+}
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Bachelor's in Computing and Informatics (Cyber Security Concentration)}{GPA: 3.85}
+      {Rowan University -- Summa Cum Laude}{Sept. 2019 - May 2023}
+      {Minor in Computer Science, German Studies}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+    
+    
+    \resumeProject
+      { Capstone LastFM Clone} %Project Name
+      {A full-stack application using three REST APIs and a database to create a dynamic web page.} %Project Name, Location Name
+      {Jan. 2023 - May 2023} %Event Dates
+
+      \resumeItemListStart
+        \item {Led a collaborative effort among peers to craft a interactive webpage, integrating three distinct APIs alongside a MySQL database to deliver a comprehensive and interactive user experience.}
+        \item {Proficiently orchestrated the seamless handling of XML and JSON API data, expertly parsing, organizing, and storing it within the database, culminating in a polished presentation that prioritized user-friendliness and accessibility.}
+        \item {Technology Used: PHP, HTML, YouTube API, Google Images API, LastFM API}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+\resumeProject
+      { Music Stats Tracker and Blog Website} %Project Name
+      {A website blog that showcases stored written articles and connects to the LastFM API.} %Project Name, Location Name
+      {Sept. 2022 - Jan. 2023} %Event Dates
+
+      \resumeItemListStart
+        \item {Developed and launched a dynamic website blog featuring an extensive collection of written articles in a MySQL Database while seamlessly integrating with the LastFM API. Leveraged the API to procure real-time music statistics, offering insightful data on my listening preferences and habits.}
+        \item {Effectively harnessed the LastFM API by constructing PHP functions to extract and manipulate XML data through REST API commands. Utilized the API to dynamically retrieve recent and top music tracks, showcasing proficiency in handling real-time statistics for music listening activities.}
+        \item {Technology Used: LastFM API, PHP, jQuery, HTML/CSS, Vue.js, MySQL database}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+      { Rock, Paper, Scissors Game} %Project Name
+      {Object-Oriented game using user interaction and event listeners.} %Project Name, Location Name
+      {July 2022} %Event Dates
+
+      \resumeItemListStart
+        \item {Engineered an immersive Rock-Paper-Scissors game with JavaScript, epitomizing strong object-oriented programming skills. Devised a dedicated class, adeptly managing user interactions and game mechanics to create an engaging experience.}
+        \item{Innovatively harnessed event listeners for enriched user interaction resulting in seamless triggering of game rounds upon selection resulted in a dynamic and enjoyable game play.}
+        \item {Technology Used: JavaScript , CSS, HTML
+}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Software Developer Intern}{Wilmington, Delaware}
+      {Clarip}{June 2022 - August 2022}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Demonstrated proficiency across multiple coding languages including PHP, JavaScript, HTML, and CSS to engineer a comprehensive LEMP stack application for the company's developmental endeavors.}
+    \item { Orchestrated the creation of dynamic webpages, seamlessly extracting data from Clarip's MySQL database using PHP, while leveraging JavaScript to seamlessly integrate interactive charts. Employed HTML and CSS to ensure a polished presentation of content on the web platform.}
+    \item {Engineered compelling infographics for clientele, employing the dynamic functionalities of the Chart.js JavaScript library. Through a seamless fusion of technical expertise and creative finesse, I transformed raw data into visually engaging representations, empowering clients with insightful and digestible information.}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    \vspace{-3.0mm}
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: PHP, JavaScript, Java, SQL, CSS, HTML, C++, C, C\#, Python } \\
+     \textbf{Frameworks }{: jQuery, Vue.js, Node.js, Chart.js, Angular, Django, Bootstrap}\\ 
+     \textbf{Web Dev Tools}{: Visual Studio Code, Git, GitHub } \\ 
+     \textbf{Cloud/Databases}{: MongoDb, Azure, AWS, Relational Database(mySQL) } \\  
+     
+     \textbf{Relevant Coursework}{: Computer Science and Programming; Object Oriented Programming in JAVA; Data Structures and Algorithms; Advanced Programming Workshop in JavaScript; Web Programming; Applied Database Technologies } \\ 
+     
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Leadership Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{ Event Coordinator} % Position
+    {Upsilon Pi Epsilon} %Club,Event
+    {Sept. 2022 - May 2023} %Tenure Period \\
+    \resumeItemListStart
+    \item {Collaborated with the community to organize engaging events, featuring guest speakers and exciting club collaborations to bring more students to after class activities.}
+    \item {Devised and executed innovative fundraisers, resulting in the successful collection of funds to ease expenses for 25 new members joining the honor society, effectively reducing their financial commitment by \$15 each.}
+    \resumeItemListEnd
+% \resumeSubHeadingListStart
+\resumePOR{ President, Co-Founder} % Position
+    {Women in Engineering} %Club,Event
+    {Sept. 2018 - June 2019} %Tenure Period \\
+    \resumeItemListStart
+    \item {Pioneered the establishment of an enduring chapter in 2018 at North Penn High School, orchestrating its continuous growth and success. Additionally, orchestrated the creation of a sister organization affiliated with Drexel's Women in Engineering club, fostering a network that transcends educational institutions and empowers young women in engineering.}
+    \item {Spearheaded and meticulously organized bi-monthly meetings, curating a platform for students to actively engage in hands-on engineering activities. This dedication to structuring meaningful interactions enabled members to cultivate practical skills and foster a deeper connection to the field.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+
+% %-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{ President's Scholars of Excellence} % Award
+    { } % Event
+    {May 2023} %Event Year
+
+    \resumeItemListStart
+    \item { Bestowed upon full-time, matriculated undergraduates who have earned a cumulative grade point average of 4.0 for a given term, based on 12 semester hours of letter grades. }
+    \resumeItemListEnd
+    
+\resumePOR{ Upsilon Pi Epsilon } % Award
+    {Honor Society} % Event
+    {March 2022} %Event Year
+    \resumeItemListStart
+    \item {International Honor Society for the Computing and Information Disciplines showcasing the upper 35\% of the class.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+%-------------------------------------------
+\end{document}
